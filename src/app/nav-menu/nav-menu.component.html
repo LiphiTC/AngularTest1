@@ -1,0 +1,27 @@
+<header>
+  <nav class="navbar fixed-top navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3">
+    <div class="container">
+      <a class="navbar-brand" [routerLink]="['/']">Filmade</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+        aria-label="Toggle navigation" [attr.aria-expanded]="isExpanded" (click)="toggle()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end" [ngClass]="{ show: isExpanded }">
+        <ul class="navbar-nav flex-grow">
+          <li class="nav-item">
+            <a href="#about" class="nav-link text-dark">About</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a href="#benefits" class="nav-link text-dark">Benefits</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a href="#source-code" class="nav-link text-dark">Source code</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a href="#pricing" class="nav-link text-dark">Pricing</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
