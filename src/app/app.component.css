@@ -1,5 +1,7 @@
 .logo {
     width: 100px;
+    transition: 4s;
+
 }
 
 
@@ -23,4 +25,11 @@
 }
 .negative-benefit {
     color: red;
+}
+
+
+
+.hidden {
+    transition: 4s;
+    visibility: hidden;
 }

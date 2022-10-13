@@ -1,6 +1,7 @@
 <header>
   <nav class="navbar fixed-top navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3">
     <div class="container">
+      <a class="navbar-brand" id="navbar-logo" [routerLink]="['/']"><img src="../../assets/Camera.png" width="40px"/></a>
       <a class="navbar-brand" [routerLink]="['/']">Filmade</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
         aria-label="Toggle navigation" [attr.aria-expanded]="isExpanded" (click)="toggle()">
@@ -19,6 +20,9 @@
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']">
             <a href="#pricing" class="nav-link text-dark">Pricing</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a href="#feedback" class="nav-link text-dark">Feedback</a>
           </li>
         </ul>
       </div>

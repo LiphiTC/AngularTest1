@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Filmaker';
+  
+  ngOnInit(): void {
+    Array.from(document.getElementsByClassName("hidden")).forEach(x => x.classList.remove("hidden"));
+  }
 }
